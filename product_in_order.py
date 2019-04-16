@@ -1,6 +1,6 @@
 def product_in_order(*args, repeat=1):
-    # product('ABCD', 'xy') --> Ax Ay Bx By Cx Cy Dx Dy
-    # product(range(2), repeat=3) --> 000 001 010 011 100 101 110 111
+    # product(['A', 'B', 'C', 'D'], repeat=2) --> ('A', 'B') ('B', 'C') ('C', 'D')
+    # product(list(range(10)), repeat=3) --> 012 123 234 345 456 567 678 789
     pools = [list(pool) for pool in args][0]
     print(pools)
     result = []
