@@ -5,7 +5,6 @@ def product_in_order(*args, repeat=1):
     product(list(range(10)), repeat=3) --> 012 123 234 345 456 567 678 789
     '''
     pools = [list(pool) for pool in args][0]
-    print(pools)
     result = []
     for i, x in enumerate(pools):
         temp = []
