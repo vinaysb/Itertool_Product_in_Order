@@ -2,7 +2,7 @@ def product_in_order(*args, repeat=1):
     '''
     It accepts 1 iterable and returns a product of the iterable with itself but in order, for example,
     product(['A', 'B', 'C', 'D'], repeat=2) --> ('A', 'B') ('B', 'C') ('C', 'D')
-    product(list(range(10)), repeat=3) --> 012 123 234 345 456 567 678 789
+    product(list(range(10)), repeat=3) --> (0, 1, 2) (1, 2, 3) (2, 3, 4) (3, 4, 5) (4, 5, 6) (5, 6, 7) (6, 7, 8) (7, 8, 9)
     '''
     pools = [list(pool) for pool in args][0]
     result = []
