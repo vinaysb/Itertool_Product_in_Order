@@ -9,7 +9,6 @@ def product_in_order(*args, repeat=1):
     for i, x in enumerate(pools):
         temp = []
         for y in pools[i + 1:i + repeat]:
-            print(y)
             temp.append(y)
         if len(temp) == repeat - 1:
             result.append([])
